@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: Problema 10: Dias para segundos
+    Peça para o usuário informar uma data em dias com horas, minutos e segundos e retorne a data em segundos.
+    */
+
+    //ENTRADA
+    const dias = parseInt(prompt("Digite a quantidade de dias:"));
+    const horas = parseInt(prompt("Digite a quantidade de horas:"));
+    const minutos = parseInt(prompt("Digite a quantidade de minutos:"));
+    const segundos = parseInt(prompt("Digite a quantidade de segundos:"));
+    const segundosporDia = 86400;
+    const segundosporHora = 3600; 
+    const segundosporMinutos = 60; 
+    //PROCESSAMENTO
+    let totalSegundos = (dias * segundosporDia) + (horas * segundosporHora) + (minutos * segundosporMinutos) + segundos;
+
+    //SAÍDA
+    document.write("A quantidade total de segundos é: " + totalSegundos);
+</script>

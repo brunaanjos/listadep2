@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Salário líquido
+    //Peça para o usuário informar quantas horas trabalha no mês e quantos que recebe por hora trabalhada.Calcule o salário líquido considerando os seguintes descontos:
+    // INSS: 8 % do salário bruto
+    // IR: 11 % do salário bruto
+
+    //ENTRADA
+    const horasTrabalhadas = parseFloat(prompt("Qual é a quantidade de horas trabalhadas no mês:"));
+    const salarioPorHora = parseFloat(prompt("Qual é o valor que recebe por hora trabalhada:"));
+
+    //CONSTANTES DE CONVERSÃO
+    const taxaInss = 0.08; // 8% de desconto
+    const taxaIr = 0.11; // 11% de desconto
+
+    //PROCESSAMENTO
+    let salarioBruto = horasTrabalhadas * salarioPorHora;
+    let descontoINSS = salarioBruto * taxaInss;
+    let descontoIR = salarioBruto * taxaIr;
+    let salarioLiquido = salarioBruto - descontoINSS - descontoIR;
+
+    //SAÍDA
+    document.write("O seu salário líquido é: R$" + salarioLiquido.toFixed(2));
+
+</script>

@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Dúzia de ovos
+    Peça para o usuário informar a quantidade de ovos que foram comprados e apresente a quantidade de dúzias correspondente. Considere sempre dúzias cheias. Caso precise, arredonde para cima.
+    */
+
+    //ENTRADA
+    const quantidadeOvos = parseInt(prompt("Digite a quantidade de ovos comprados:"));
+    const ovoDuzia = 12;
+
+    //PROCESSAMENTO
+    let quantidadeDuzias = Math.ceil(quantidadeOvos / ovoDuzia);
+
+    //SAÍDA
+    document.write("A quantidade de dúzias de ovos é: " + quantidadeDuzias);
+
+</script>

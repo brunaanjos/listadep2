@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Preço do aluguel do carro
+    Peça para o usuário informar a quantidade de dias que o carro foi alugado e a quantidade de quilômetros rodados. Retorne o valor a ser pago de aluguel considerando que a diária do aluguel é de R$ 60,00 e cada Km rodado custa R$ 0,15.
+    */
+
+    //ENTRADA
+    const diasAluguel = parseInt(prompt("Qual seria a quantidade de dias que o carro foi alugado:"));
+    const quilometrosRodados = parseFloat(prompt("Qual seria a quantidade de quilômetros rodados:"));
+
+
+    const diariaAluguel = 60.00;
+    const custoQuilometro = 0.15;
+
+    //PROCESSAMENTO
+    let valorDiarias = diasAluguel * diariaAluguel;
+    let valorQuilometros = quilometrosRodados * custoQuilometro;
+    let valorTotal = valorDiarias + valorQuilometros;
+
+    //SAÍDA
+    document.write("O valor a ser pago pelo aluguel do carro é: R$" + valorTotal.toFixed(2));
+
+</script>
